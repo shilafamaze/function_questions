@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const Longest_Word = (arr) => {
+    let max = arr[0].length;
+    arr.map(e => max = Math.max(max, e.length));
+    let res = arr.filter(e => e.length == max);
+    return res;
+}
+
+const arr =['code','hello ','javascript','synnefo_solution'];
+
+document.write(Longest_Word(arr).join());
+    </script>
+</body>
+</html>

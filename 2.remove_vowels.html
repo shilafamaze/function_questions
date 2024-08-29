@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMOVE VOWELS</title>
+</head>
+<body>
+
+
+
+
+    <script>
+
+        function remove_vowels(){
+            var data = prompt ("Enter Your Name");
+            document.write(data+"<br>");
+            var new_data = data.replace(/[aeiou]/g, "");
+            document.write(new_data)
+        }
+        remove_vowels();
+
+    </script>
+</body>
+</html>
