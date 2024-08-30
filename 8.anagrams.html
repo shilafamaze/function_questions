@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+        function Anagram(str1,str2){
+             
+            function normalizeAndSort(str) {
+                return str
+                .replace(/[^a-z]/g, "")
+                .toLowerCase()
+                .split("")
+                .sort()
+                .join("");
+            }
+
+            const sortedstr1 = normalizeAndSort(str1);
+            const sortedstr2 = normalizeAndSort(str2);
+
+            return sortedstr1 === sortedstr2;
+        }
+
+        console.log(Anagram('earth','heart'));
+        console.log(Anagram('hello','world'));
+        
+    </script>
+</body>
+</html>
